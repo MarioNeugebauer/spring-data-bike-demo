@@ -1,1 +1,1 @@
-# springpkademo
+# spring-data-bike-demo
