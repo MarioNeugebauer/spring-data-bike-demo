@@ -1,9 +1,8 @@
 package org.htwdresden.informatik.pka.springdatabikedemo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
+import java.util.Set;
 
 @Entity
 public class Bike {
@@ -15,6 +14,10 @@ public class Bike {
     private String frameNumber;
     private Integer wheelSizeInch;
     private Integer frameSize;
+
+    @ManyToOne
+    @JoinColumn(name="owner_id", nullable = false)
+    private Owner owner;
 
     protected Bike() {}
 
@@ -51,5 +54,13 @@ public class Bike {
 
     public Integer getFrameSize() {
         return frameSize;
+    }
+
+    public Owner getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Owner owner) {
+        this.owner = owner;
     }
 }
