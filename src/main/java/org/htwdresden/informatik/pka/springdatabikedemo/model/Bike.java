@@ -1,9 +1,9 @@
-package org.htwdresden.informatik.pkademo.SpringPKAdemo.model;
+package org.htwdresden.informatik.pka.springdatabikedemo.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 public class Bike {
@@ -18,7 +18,8 @@ public class Bike {
 
     protected Bike() {}
 
-    public Bike(String type, String frameNumber, Integer wheelSizeInch, Integer frameSize) {
+    public Bike(String type, String frameNumber, Integer wheelSizeInch,
+                Integer frameSize) {
         this.type = type;
         this.frameNumber = frameNumber;
         this.wheelSizeInch = wheelSizeInch;
@@ -30,10 +31,7 @@ public class Bike {
         this.frameNumber = frameNumber;
     }
 
-    @Override
-    public String toString() {
-        return String.format("Bike[frameNumber=%s]",frameNumber);
-    }
+    public String toString() {return String.format("Bike[frameNumber=%s]",frameNumber); }
 
     public Long getId() {
         return id;
@@ -54,6 +52,4 @@ public class Bike {
     public Integer getFrameSize() {
         return frameSize;
     }
-
 }
-

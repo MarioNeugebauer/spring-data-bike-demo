@@ -1,7 +1,7 @@
-package org.htwdresden.informatik.pkademo.SpringPKAdemo;
+package org.htwdresden.informatik.pka.springdatabikedemo;
 
-import org.htwdresden.informatik.pkademo.SpringPKAdemo.model.Bike;
-import org.htwdresden.informatik.pkademo.SpringPKAdemo.repository.BikeRepository;
+import org.htwdresden.informatik.pka.springdatabikedemo.model.Bike;
+import org.htwdresden.informatik.pka.springdatabikedemo.repository.BikeRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -10,14 +10,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class SpringPkAdemoApplication {
+public class SpringDataBikeDemoApplication {
 
-	private static final Logger log = LoggerFactory.getLogger(SpringPkAdemoApplication.class);
+	private static final Logger log = LoggerFactory.getLogger(SpringDataBikeDemoApplication.class);
 
 	public static void main(String[] args) {
-
-		SpringApplication.run(SpringPkAdemoApplication.class, args);
-
+		SpringApplication.run(SpringDataBikeDemoApplication.class, args);
 	}
 
 	@Bean

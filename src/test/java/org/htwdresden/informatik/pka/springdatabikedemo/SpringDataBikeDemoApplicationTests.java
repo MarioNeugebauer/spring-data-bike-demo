@@ -1,10 +1,10 @@
-package org.htwdresden.informatik.pkademo.SpringPKAdemo;
+package org.htwdresden.informatik.pka.springdatabikedemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringPkAdemoApplicationTests {
+class SpringDataBikeDemoApplicationTests {
 
 	@Test
 	void contextLoads() {

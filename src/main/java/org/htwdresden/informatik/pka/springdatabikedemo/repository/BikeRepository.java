@@ -1,6 +1,6 @@
-package org.htwdresden.informatik.pkademo.SpringPKAdemo.repository;
+package org.htwdresden.informatik.pka.springdatabikedemo.repository;
 
-import org.htwdresden.informatik.pkademo.SpringPKAdemo.model.Bike;
+import org.htwdresden.informatik.pka.springdatabikedemo.model.Bike;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
