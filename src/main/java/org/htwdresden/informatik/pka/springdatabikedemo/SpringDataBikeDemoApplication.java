@@ -25,8 +25,8 @@ public class SpringDataBikeDemoApplication {
 		return (args) -> {
 
 
-			Owner owner01 = new Owner("Klaus", "Klausnitzer");
-			Owner owner02 = new Owner("Fred", "Feuerstein");
+			Owner owner01 = new Owner("Klaus", "Klausnitzer", "Kirchweg", "Karlstadt");
+			Owner owner02 = new Owner("Fred", "Feuerstein", "Feldweg", "Frankfurt");
 
 			Bike bike01 = new Bike("male", "1001", 26, 34);
 			bike01.setOwner(owner01);

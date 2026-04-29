@@ -13,6 +13,8 @@ public class Owner {
     private Long id;
     private String firstname;
     private String lastname;
+    private String street;
+    private String city;
 
     @OneToMany(mappedBy = "owner")
     private Set<Bike> bikes;
@@ -20,9 +22,12 @@ public class Owner {
 
     protected Owner() {}
 
-    public Owner(String firstname, String lastname) {
+    public Owner(String firstname, String lastname, String street, String city) {
+        this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
+        this.street = street;
+        this.city = city;
     }
 
     public String toString() {
@@ -40,6 +45,10 @@ public class Owner {
     public String getLastname() {
         return lastname;
     }
+
+    public String getStreet() { return street; }
+
+    public String getCity() { return city; }
 
     public Set<Bike> getBikes() {
         if(this.bikes == null) {
