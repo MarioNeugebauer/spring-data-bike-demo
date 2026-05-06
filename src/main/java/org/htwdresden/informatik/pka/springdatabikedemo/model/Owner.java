@@ -20,7 +20,7 @@ public class Owner {
     private Set<Bike> bikes;
 
 
-    protected Owner() {}
+    public Owner() {}
 
     public Owner(String firstname, String lastname, String street, String city) {
         this.id = id;
@@ -49,6 +49,18 @@ public class Owner {
     public String getStreet() { return street; }
 
     public String getCity() { return city; }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
 
     public Set<Bike> getBikes() {
         if(this.bikes == null) {
